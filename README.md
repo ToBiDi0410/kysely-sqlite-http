@@ -37,6 +37,7 @@ export const db = new Kysely<Database>({
     dialect,
 });
 ```
+Learn more about the options at https://github.com/phiresky/sql.js-httpvfs/tree/master?tab=readme-ov-file#usage
 
 ## Installation
 Installable via NPM Repository
