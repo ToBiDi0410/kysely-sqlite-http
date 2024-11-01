@@ -1,7 +1,15 @@
 {
   "name": "kysely-sqlite-http",
-  "version": "1.0.2",
-  "description": "",
+  "version": "1.0.3",
+  "description": "An Kysely dialect for querying data from statically hosted sqlite databases",
+  "keywords": ["http", "database", "gh-pages", "sqlite", "static-site", "vfs", "dialect", "kysely"],
+  "browser": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ToBiDi0410/kysely-sqlite-http.git"
+  },
+  "author": "ToBiDi0410",
+  "license": "ISC",
   "type": "module",
   "source": "src/index.ts",
   "module": "dist/index.js",
@@ -9,9 +17,6 @@
   "scripts": {
     "build": "tsc"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "kysely": "^0.27.4",
     "sql.js-httpvfs": "^0.8.12"
