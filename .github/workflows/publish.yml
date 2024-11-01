@@ -15,6 +15,8 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - name: Install dependencies and build 🔧
         run: npm ci && npm run build
+      - name: Add dist folder for publish 📂
+        run: git add -f dist
       - name: Publish package on NPM 📦
         run: npm publish
         env:
