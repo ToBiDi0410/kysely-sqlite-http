@@ -1,0 +1,23 @@
+{
+  "name": "kysely-sqlite-http",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "source": "src/index.ts",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "pnpm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "kysely": "^0.27.4",
+    "sql.js-httpvfs": "^0.8.12"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}
