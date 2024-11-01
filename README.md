@@ -19,23 +19,22 @@ import { type Database } from './database.ts'; //Your database definition
 
 const dialect = new SqliteHttpDialect({
     debug: true,
-
     /* These options match the ones needed for sql.js-httpvfs */
     maxBytesToRead: 10 * 1024 * 1024,
     fileConfigs: [ 
         {
         from: "inline",
-        config: {
-            serverMode: "full",
-            requestChunkSize: 4096,
-            url: "./fancyRemote.db"
-        }
+            config: {
+                serverMode: "full",
+                requestChunkSize: 4096,
+                url: "./fancyRemote.db"
+            }
         }
     ]
 });
 
 export const db = new Kysely<Database>({
-  dialect,
+    dialect,
 });
 ```
 
